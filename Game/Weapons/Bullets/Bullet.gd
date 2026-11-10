@@ -1,8 +1,7 @@
 class_name Bullet extends Hitbox
 
 
-@export var speed: float = 200
-@export var hitbox: Hitbox
+var speed: float
 
 
 func _ready() -> void:

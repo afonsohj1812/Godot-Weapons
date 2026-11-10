@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://wykg71it68nk"
-path="res://.godot/imported/AK47.png-bff767c71a7427799b22ab50f721b97e.ctex"
+path="res://.godot/imported/AK47.png-918f77f902bec49f929378be2e98e5fc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game/Weapons/Temp/AK47.png"
-dest_files=["res://.godot/imported/AK47.png-bff767c71a7427799b22ab50f721b97e.ctex"]
+source_file="res://Game/Weapons/AK47/AK47.png"
+dest_files=["res://.godot/imported/AK47.png-918f77f902bec49f929378be2e98e5fc.ctex"]
 
 [params]
 
