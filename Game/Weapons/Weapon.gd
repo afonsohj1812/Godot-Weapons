@@ -33,6 +33,8 @@ func shoot(delta: float) -> void:
 
 		bulletScene.attack = stats.attack
 		bulletScene.speed = stats.bulletSpeed
+		bulletScene.range = stats.bulletRange
+		bulletScene.hitCount = stats.followThrough
 
 		var spread: float = stats.spread / 2 * PI / 180
 		bulletScene.rotation = global_rotation + randf_range(-spread, spread)

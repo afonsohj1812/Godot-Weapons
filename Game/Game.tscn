@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bfx2t6tftbred" path="res://Game/Game.gd" id="1_hqwdr"]
 [ext_resource type="Script" uid="uid://i1kixkxnc6ef" path="res://Game/Entities/Attack.gd" id="2_fuqhk"]
 [ext_resource type="PackedScene" uid="uid://bvxwktkbkbwog" path="res://Game/Entities/Dummy/Dummy.tscn" id="2_vrr3t"]
+[ext_resource type="Resource" uid="uid://u2kan5x1urd8" path="res://Game/Weapons/Rifle/Rifle.tres" id="5_fuqhk"]
 [ext_resource type="PackedScene" uid="uid://cikw3j5c55v4a" path="res://Game/Weapons/Weapon.tscn" id="5_ghvq8"]
 [ext_resource type="Texture2D" uid="uid://dy4y3bom5a7od" path="res://Game/Entities/Pivot.png" id="5_jxerj"]
 
@@ -24,6 +25,8 @@ zoom = Vector2(2, 2)
 [node name="Pivot" type="Node2D" parent="." unique_id=1584943036]
 
 [node name="Weapon" parent="Pivot" unique_id=1831088171 instance=ExtResource("5_ghvq8")]
+position = Vector2(18, -2)
+stats = ExtResource("5_fuqhk")
 
 [node name="Sprite" type="Sprite2D" parent="Pivot" unique_id=548648808]
 texture = ExtResource("5_jxerj")

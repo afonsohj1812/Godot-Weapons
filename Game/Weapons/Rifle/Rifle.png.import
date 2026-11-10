@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://fopdu27jbypq"
-path="res://.godot/imported/M15.png-cf0ea74245d4af166c5b7fe6295bb552.ctex"
+uid="uid://cr0hn0lmu2cga"
+path="res://.godot/imported/Rifle.png-d9a7bfade9815d8505630d7cf94239b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game/Weapons/Temp/M15.png"
-dest_files=["res://.godot/imported/M15.png-cf0ea74245d4af166c5b7fe6295bb552.ctex"]
+source_file="res://Game/Weapons/Rifle/Rifle.png"
+dest_files=["res://.godot/imported/Rifle.png-d9a7bfade9815d8505630d7cf94239b1.ctex"]
 
 [params]
 

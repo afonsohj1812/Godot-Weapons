@@ -1,16 +1,13 @@
 [gd_scene format=3 uid="uid://cikw3j5c55v4a"]
 
 [ext_resource type="Script" uid="uid://nhlck73454mv" path="res://Game/Weapons/Weapon.gd" id="1_q6u4f"]
-[ext_resource type="Resource" uid="uid://bpeo1nvod3tgg" path="res://Game/Weapons/AK47/AK47.tres" id="2_ssifr"]
+[ext_resource type="Resource" uid="uid://b7mncv3p2pxya" path="res://Game/Weapons/Pistol/Pistol.tres" id="2_262dy"]
 [ext_resource type="PackedScene" uid="uid://cwn4pwerf51vp" path="res://Game/Weapons/Bullets/Bullet.tscn" id="3_g0lem"]
-[ext_resource type="Texture2D" uid="uid://wykg71it68nk" path="res://Game/Weapons/AK47/AK47.png" id="4_lmhom"]
 
 [node name="Weapon" type="Node2D" unique_id=1831088171 node_paths=PackedStringArray("sprite")]
-position = Vector2(5, -1)
 script = ExtResource("1_q6u4f")
-stats = ExtResource("2_ssifr")
+stats = ExtResource("2_262dy")
 sprite = NodePath("Sprite")
 bullet = ExtResource("3_g0lem")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=662829360]
-texture = ExtResource("4_lmhom")

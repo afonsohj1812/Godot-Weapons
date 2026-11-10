@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cr0hn0lmu2cga"
-path="res://.godot/imported/M24.png-0789ae540ffbd270862a03605de79c27.ctex"
+uid="uid://d2c3rxmuc0igu"
+path="res://.godot/imported/Submachine Gun.png-f7d9bb98bb9d89747a4fb01979c6481b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game/Weapons/Temp/M24.png"
-dest_files=["res://.godot/imported/M24.png-0789ae540ffbd270862a03605de79c27.ctex"]
+source_file="res://Game/Weapons/Submachine Gun/Submachine Gun.png"
+dest_files=["res://.godot/imported/Submachine Gun.png-f7d9bb98bb9d89747a4fb01979c6481b.ctex"]
 
 [params]
 

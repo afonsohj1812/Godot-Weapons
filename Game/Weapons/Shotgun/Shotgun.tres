@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="WeaponStats" format=3 uid="uid://dwd0avmo3cup1"]
+
+[ext_resource type="Script" uid="uid://c11kpvifrq6si" path="res://Game/Weapons/WeaponStats.gd" id="1_aihgf"]
+[ext_resource type="Texture2D" uid="uid://do221w1d2o046" path="res://Game/Weapons/Shotgun/Shotgun.png" id="2_3y35n"]
+
+[resource]
+script = ExtResource("1_aihgf")
+bulletSpeed = 500.0
+spread = 30.0
+multishot = 8
+texture = ExtResource("2_3y35n")
+pivotPos = Vector2(7, 0)
+muzzlePos = Vector2(14, -2.5)
+metadata/_custom_type_script = "uid://c11kpvifrq6si"

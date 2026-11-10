@@ -18,7 +18,9 @@ func _input(event: InputEvent) -> void:
 
 
 func _process(delta: float) -> void:
-	pivot.look_at(get_global_mouse_position())
+	var mousePos: Vector2 = get_global_mouse_position()
+	pivot.scale.y = -1 if mousePos.x < pivot.global_position.x else 1
+	pivot.look_at(mousePos)
 
 	if (Input.is_action_pressed("Shoot")):
 		weapon.shoot(delta)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://do221w1d2o046"
-path="res://.godot/imported/SawedOffShotgun.png-07ec5a32a85bf4cbd5a28da3fb5b36a4.ctex"
+path="res://.godot/imported/Shotgun.png-97be4a652fa2bb87fb4c3baf0f247204.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game/Weapons/Temp/SawedOffShotgun.png"
-dest_files=["res://.godot/imported/SawedOffShotgun.png-07ec5a32a85bf4cbd5a28da3fb5b36a4.ctex"]
+source_file="res://Game/Weapons/Shotgun/Shotgun.png"
+dest_files=["res://.godot/imported/Shotgun.png-97be4a652fa2bb87fb4c3baf0f247204.ctex"]
 
 [params]
 

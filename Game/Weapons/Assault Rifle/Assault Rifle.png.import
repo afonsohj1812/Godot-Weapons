@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duj5b4pcfgemm"
-path="res://.godot/imported/Revolver.png-e39023a0df0a0a9967d6ec238ebb58fe.ctex"
+uid="uid://wykg71it68nk"
+path="res://.godot/imported/Assault Rifle.png-500ad2142488371f6453fbe912efe7d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game/Weapons/Temp/Revolver.png"
-dest_files=["res://.godot/imported/Revolver.png-e39023a0df0a0a9967d6ec238ebb58fe.ctex"]
+source_file="res://Game/Weapons/Assault Rifle/Assault Rifle.png"
+dest_files=["res://.godot/imported/Assault Rifle.png-500ad2142488371f6453fbe912efe7d9.ctex"]
 
 [params]
 
