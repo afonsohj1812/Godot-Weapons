@@ -2,8 +2,8 @@ class_name Bullet extends Hitbox
 
 
 var speed: float
-var range: float
-var hitCount: int
+var distance: float
+var hits: int
 
 
 func _ready() -> void:
@@ -11,17 +11,16 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	var distance: float = speed * delta
-	global_position += Vector2.RIGHT.rotated(rotation) * distance
+	global_position += Vector2.RIGHT.rotated(rotation) * speed * delta
 
-	range -= distance
-	if (range <= 0):
+	distance -= speed * delta
+	if (distance <= 0):
 		queue_free()
 
 
 func _on_area_entered(area: Area2D) -> void:
 	if (area is Hurtbox):
-		hitCount -= 1
+		hits -= 1
 
-		if (hitCount <= 0):
+		if (hits <= 0):
 			queue_free()
