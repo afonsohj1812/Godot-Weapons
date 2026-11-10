@@ -3,16 +3,23 @@
 [ext_resource type="Script" uid="uid://bfx2t6tftbred" path="res://Game/Game.gd" id="1_hqwdr"]
 [ext_resource type="Script" uid="uid://i1kixkxnc6ef" path="res://Game/Entities/Attack.gd" id="2_fuqhk"]
 [ext_resource type="PackedScene" uid="uid://bvxwktkbkbwog" path="res://Game/Entities/Dummy/Dummy.tscn" id="2_vrr3t"]
+[ext_resource type="PackedScene" uid="uid://cwn4pwerf51vp" path="res://Game/Weapons/Bullets/Bullet.tscn" id="4_37esa"]
+[ext_resource type="Texture2D" uid="uid://dy4y3bom5a7od" path="res://Game/Entities/Pivot.png" id="5_jxerj"]
 
 [sub_resource type="Resource" id="Resource_18b8n"]
 script = ExtResource("2_fuqhk")
 metadata/_custom_type_script = "uid://i1kixkxnc6ef"
 
-[node name="Game" type="Node2D" unique_id=441822849]
+[node name="Game" type="Node2D" unique_id=441822849 node_paths=PackedStringArray("pivot")]
 y_sort_enabled = true
 script = ExtResource("1_hqwdr")
 attack = SubResource("Resource_18b8n")
 dummy = ExtResource("2_vrr3t")
+bullet = ExtResource("4_37esa")
+pivot = NodePath("Pivot")
 
 [node name="Camera" type="Camera2D" parent="." unique_id=892030078]
 zoom = Vector2(2, 2)
+
+[node name="Pivot" type="Sprite2D" parent="." unique_id=548648808]
+texture = ExtResource("5_jxerj")
