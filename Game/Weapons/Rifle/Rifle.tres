@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://i1kixkxnc6ef" path="res://Game/Entities/Attack.gd" id="1_0d6my"]
 [ext_resource type="Script" uid="uid://c11kpvifrq6si" path="res://Game/Weapons/WeaponStats.gd" id="1_3dcu7"]
 [ext_resource type="Texture2D" uid="uid://cr0hn0lmu2cga" path="res://Game/Weapons/Rifle/Rifle.png" id="2_j2y76"]
+[ext_resource type="Resource" uid="uid://ocwnds5xhywp" path="res://Game/Weapons/Bullets/BulletRifleBig.tres" id="2_skphy"]
 
 [sub_resource type="Resource" id="Resource_tx14g"]
 script = ExtResource("1_0d6my")
@@ -14,10 +15,11 @@ metadata/_custom_type_script = "uid://i1kixkxnc6ef"
 [resource]
 script = ExtResource("1_3dcu7")
 attack = SubResource("Resource_tx14g")
+bullet = ExtResource("2_skphy")
 bulletSpeed = 500.0
 bulletRange = 500.0
 followThrough = 5
 texture = ExtResource("2_j2y76")
-pivotPos = Vector2(18, -2)
+pivotPos = Vector2(13, -2)
 muzzlePos = Vector2(17, -1.5)
 metadata/_custom_type_script = "uid://c11kpvifrq6si"

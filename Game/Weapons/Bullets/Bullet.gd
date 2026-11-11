@@ -1,6 +1,9 @@
 class_name Bullet extends Hitbox
 
 
+@export var sprite: Sprite2D
+@export var collision: CollisionShape2D
+
 var speed: float
 var distance: float
 var hits: int
@@ -24,3 +27,8 @@ func _on_area_entered(area: Area2D) -> void:
 
 		if (hits <= 0):
 			queue_free()
+
+
+func load_bullet(texture: Texture2D, size: Vector2) -> void:
+	sprite.texture = texture
+	collision.shape.get_rect().size = size

@@ -39,6 +39,7 @@ func shoot(delta: float) -> void:
 		var spread: float = stats.spread / 2 * PI / 180
 		bulletScene.rotation = global_rotation + randf_range(-spread, spread)
 		
+		bulletScene.load_bullet(stats.bullet.texture, stats.bullet.size)
 		get_tree().current_scene.add_child(bulletScene)
 
 

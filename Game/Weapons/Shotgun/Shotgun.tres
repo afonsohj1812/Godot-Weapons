@@ -1,10 +1,20 @@
 [gd_resource type="Resource" script_class="WeaponStats" format=3 uid="uid://dwd0avmo3cup1"]
 
+[ext_resource type="Script" uid="uid://i1kixkxnc6ef" path="res://Game/Entities/Attack.gd" id="1_5jsxj"]
 [ext_resource type="Script" uid="uid://c11kpvifrq6si" path="res://Game/Weapons/WeaponStats.gd" id="1_aihgf"]
 [ext_resource type="Texture2D" uid="uid://do221w1d2o046" path="res://Game/Weapons/Shotgun/Shotgun.png" id="2_3y35n"]
+[ext_resource type="Resource" uid="uid://8cqiqo3bxdol" path="res://Game/Weapons/Bullets/BulletShotgunSmall.tres" id="2_bnsuj"]
+
+[sub_resource type="Resource" id="Resource_gp3ee"]
+script = ExtResource("1_5jsxj")
+damage = 2
+critChance = 0.25
+metadata/_custom_type_script = "uid://i1kixkxnc6ef"
 
 [resource]
 script = ExtResource("1_aihgf")
+attack = SubResource("Resource_gp3ee")
+bullet = ExtResource("2_bnsuj")
 bulletSpeed = 500.0
 spread = 30.0
 multishot = 8

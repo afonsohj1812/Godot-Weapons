@@ -2,6 +2,7 @@ class_name WeaponStats extends Resource
 
 
 @export var attack: Attack
+@export var bullet: BulletStats
 @export var bulletSpeed: float = 100
 @export var bulletRange: float = 200
 @export var followThrough: int = 1

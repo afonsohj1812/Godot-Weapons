@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c11kpvifrq6si" path="res://Game/Weapons/WeaponStats.gd" id="1_rte5l"]
 [ext_resource type="Script" uid="uid://i1kixkxnc6ef" path="res://Game/Entities/Attack.gd" id="1_tx14g"]
+[ext_resource type="Resource" uid="uid://bgfhdxq6tgchk" path="res://Game/Weapons/Bullets/BulletPistolSmall.tres" id="2_mjstn"]
 [ext_resource type="Texture2D" uid="uid://d2c3rxmuc0igu" path="res://Game/Weapons/Submachine Gun/Submachine Gun.png" id="2_t5mk4"]
 
 [sub_resource type="Resource" id="Resource_xl032"]
@@ -11,6 +12,7 @@ metadata/_custom_type_script = "uid://i1kixkxnc6ef"
 [resource]
 script = ExtResource("1_rte5l")
 attack = SubResource("Resource_xl032")
+bullet = ExtResource("2_mjstn")
 bulletSpeed = 300.0
 fireRate = 10
 spread = 15.0

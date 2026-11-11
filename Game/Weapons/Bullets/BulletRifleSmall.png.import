@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy4r07n06fnri"
-path="res://.godot/imported/RifleAmmoBig.png-3c68fff5cd0dd187bd297ccb7c377cd8.ctex"
+uid="uid://d0jhlvi8f02ss"
+path="res://.godot/imported/BulletRifleSmall.png-56f35557104ba52d218f042c4ebf334b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game/Weapons/Bullets/RifleAmmoBig.png"
-dest_files=["res://.godot/imported/RifleAmmoBig.png-3c68fff5cd0dd187bd297ccb7c377cd8.ctex"]
+source_file="res://Game/Weapons/Bullets/BulletRifleSmall.png"
+dest_files=["res://.godot/imported/BulletRifleSmall.png-56f35557104ba52d218f042c4ebf334b.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dglfodghjbgsj"
-path="res://.godot/imported/ShotgunShellBig.png-ee3a3d010dd0c8c6ad10b606c7098eb9.ctex"
+uid="uid://dh3eysp0pyca3"
+path="res://.godot/imported/BulletPistolBig.png-b23ce7a416b702947204d960889e3069.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game/Weapons/Bullets/ShotgunShellBig.png"
-dest_files=["res://.godot/imported/ShotgunShellBig.png-ee3a3d010dd0c8c6ad10b606c7098eb9.ctex"]
+source_file="res://Game/Weapons/Bullets/BulletPistolBig.png"
+dest_files=["res://.godot/imported/BulletPistolBig.png-b23ce7a416b702947204d960889e3069.ctex"]
 
 [params]
 

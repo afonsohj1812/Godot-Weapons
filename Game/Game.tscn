@@ -31,7 +31,7 @@ zoom = Vector2(2, 2)
 [node name="Pivot" type="Node2D" parent="." unique_id=1584943036]
 
 [node name="Weapon" parent="Pivot" unique_id=1831088171 instance=ExtResource("5_ghvq8")]
-position = Vector2(5, -1)
+stats = ExtResource("5_r0byk")
 
 [node name="Sprite" type="Sprite2D" parent="Pivot" unique_id=548648808]
 texture = ExtResource("5_jxerj")

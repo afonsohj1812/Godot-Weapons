@@ -1,13 +1,16 @@
 [gd_scene format=3 uid="uid://cikw3j5c55v4a"]
 
 [ext_resource type="Script" uid="uid://nhlck73454mv" path="res://Game/Weapons/Weapon.gd" id="1_q6u4f"]
-[ext_resource type="Resource" uid="uid://b7mncv3p2pxya" path="res://Game/Weapons/Pistol/Pistol.tres" id="2_262dy"]
+[ext_resource type="Resource" uid="uid://u2kan5x1urd8" path="res://Game/Weapons/Rifle/Rifle.tres" id="2_g0lem"]
 [ext_resource type="PackedScene" uid="uid://cwn4pwerf51vp" path="res://Game/Weapons/Bullets/Bullet.tscn" id="3_g0lem"]
+[ext_resource type="Texture2D" uid="uid://cr0hn0lmu2cga" path="res://Game/Weapons/Rifle/Rifle.png" id="4_lmhom"]
 
 [node name="Weapon" type="Node2D" unique_id=1831088171 node_paths=PackedStringArray("sprite")]
+position = Vector2(18, -2)
 script = ExtResource("1_q6u4f")
-stats = ExtResource("2_262dy")
+stats = ExtResource("2_g0lem")
 sprite = NodePath("Sprite")
 bullet = ExtResource("3_g0lem")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=662829360]
+texture = ExtResource("4_lmhom")

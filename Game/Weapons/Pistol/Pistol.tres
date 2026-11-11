@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c11kpvifrq6si" path="res://Game/Weapons/WeaponStats.gd" id="1_ia1ne"]
 [ext_resource type="Script" uid="uid://i1kixkxnc6ef" path="res://Game/Entities/Attack.gd" id="1_xl032"]
+[ext_resource type="Resource" uid="uid://bgfhdxq6tgchk" path="res://Game/Weapons/Bullets/BulletPistolSmall.tres" id="2_1fd5a"]
 [ext_resource type="Texture2D" uid="uid://duj5b4pcfgemm" path="res://Game/Weapons/Pistol/Pistol.png" id="2_yu21s"]
 
 [sub_resource type="Resource" id="Resource_jxerj"]
@@ -11,6 +12,7 @@ metadata/_custom_type_script = "uid://i1kixkxnc6ef"
 [resource]
 script = ExtResource("1_ia1ne")
 attack = SubResource("Resource_jxerj")
+bullet = ExtResource("2_1fd5a")
 bulletSpeed = 200.0
 fireRate = 2
 spread = 15.0

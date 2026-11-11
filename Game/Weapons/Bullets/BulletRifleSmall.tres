@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BulletStats" format=3 uid="uid://h40pnq7favjf"]
+
+[ext_resource type="Script" uid="uid://ifddwpy6wubh" path="res://Game/Weapons/Bullets/BulletStats.gd" id="1_7d3o6"]
+[ext_resource type="Texture2D" uid="uid://d0jhlvi8f02ss" path="res://Game/Weapons/Bullets/BulletRifleSmall.png" id="2_bga53"]
+
+[resource]
+script = ExtResource("1_7d3o6")
+texture = ExtResource("2_bga53")
+size = Vector2(8, 4)
+metadata/_custom_type_script = "uid://ifddwpy6wubh"
