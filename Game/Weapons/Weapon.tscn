@@ -5,12 +5,39 @@
 [ext_resource type="PackedScene" uid="uid://cwn4pwerf51vp" path="res://Game/Weapons/Bullets/Bullet.tscn" id="3_g0lem"]
 [ext_resource type="Texture2D" uid="uid://cr0hn0lmu2cga" path="res://Game/Weapons/Rifle/Rifle.png" id="4_lmhom"]
 
-[node name="Weapon" type="Node2D" unique_id=1831088171 node_paths=PackedStringArray("sprite")]
-position = Vector2(18, -2)
+[sub_resource type="Gradient" id="Gradient_g0lem"]
+offsets = PackedFloat32Array(0, 0.5, 1)
+colors = PackedColorArray(1, 0.8784314, 0.4, 1, 1, 0.54901963, 0.101960786, 1, 1, 0.27450982, 0.101960786, 0)
+metadata/_snap_enabled = true
+metadata/_snap_count = 2
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_2bvp2"]
+gradient = SubResource("Gradient_g0lem")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ijymp"]
+particle_flag_disable_z = true
+spread = 30.0
+initial_velocity_min = 75.0
+initial_velocity_max = 100.0
+gravity = Vector3(0, 0, 0)
+damping_min = 400.00003
+damping_max = 500.00003
+color_ramp = SubResource("GradientTexture1D_2bvp2")
+
+[node name="Weapon" type="Node2D" unique_id=1831088171 node_paths=PackedStringArray("sprite", "muzzleFlash")]
+position = Vector2(13, -2)
 script = ExtResource("1_q6u4f")
 stats = ExtResource("2_g0lem")
 sprite = NodePath("Sprite")
 bullet = ExtResource("3_g0lem")
+muzzleFlash = NodePath("MuzzleFlash")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=662829360]
 texture = ExtResource("4_lmhom")
+
+[node name="MuzzleFlash" type="GPUParticles2D" parent="." unique_id=793496566]
+emitting = false
+lifetime = 0.09999999999999999
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_ijymp")

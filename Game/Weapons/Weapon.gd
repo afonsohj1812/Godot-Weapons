@@ -10,6 +10,7 @@ class_name Weapon extends Node2D
 
 @export var sprite: Sprite2D
 @export var bullet: PackedScene
+@export var muzzleFlash: GPUParticles2D
 
 var fireCooldown: float = 0
 
@@ -21,6 +22,7 @@ func _ready() -> void:
 func load_weapon() -> void:
 	sprite.texture = stats.texture
 	position = stats.pivotPos
+	muzzleFlash.position = stats.muzzlePos
 
 
 func _process(delta: float) -> void:
@@ -34,6 +36,8 @@ func shoot() -> void:
 	fireCooldown = 1.0 / stats.fireRate
 	for i in range(stats.multishot):
 		spawnBullet()
+
+	muzzleFlash.restart()
 
 
 func spawnBullet() -> void:
