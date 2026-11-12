@@ -23,7 +23,7 @@ attack = SubResource("Resource_18b8n")
 dummy = ExtResource("2_vrr3t")
 pivot = NodePath("Pivot")
 weapon = NodePath("Pivot/Weapon")
-weapons = Array[ExtResource("4_gp3ee")]([ExtResource("5_r0byk"), ExtResource("6_hmm1m"), ExtResource("7_xnkgk"), ExtResource("8_vl8r5"), ExtResource("5_fuqhk")])
+weapons = Array[ExtResource("4_gp3ee")]([ExtResource("5_r0byk"), ExtResource("6_hmm1m"), ExtResource("8_vl8r5"), ExtResource("7_xnkgk"), ExtResource("5_fuqhk")])
 
 [node name="Camera" type="Camera2D" parent="." unique_id=892030078]
 zoom = Vector2(2, 2)
@@ -31,6 +31,7 @@ zoom = Vector2(2, 2)
 [node name="Pivot" type="Node2D" parent="." unique_id=1584943036]
 
 [node name="Weapon" parent="Pivot" unique_id=1831088171 instance=ExtResource("5_ghvq8")]
+position = Vector2(5, -1)
 stats = ExtResource("5_r0byk")
 
 [node name="Sprite" type="Sprite2D" parent="Pivot" unique_id=548648808]

@@ -22,14 +22,13 @@ func _process(_delta: float) -> void:
 		sprite.flip_h = (velocity.x > 0)
 
 
-func _physics_process(delta: float) -> void:
+func getMovement(delta: float) -> Vector2:
 	if !isMoving:
-		return
+		return Vector2.ZERO
 
 	turnTime -= delta
 	if (turnTime <= 0):
 		turnTime = randf_range(1, 2)
 		direction = Vector2.from_angle(randf() * TAU)
 
-	velocity = direction * speed
-	move_and_slide()
+	return direction * speed

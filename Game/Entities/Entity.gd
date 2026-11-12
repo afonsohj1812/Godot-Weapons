@@ -9,9 +9,11 @@ const GROUP: StringName = &"Entities"
 
 @export var maxHealth: int = 100
 @export var speed: float = 100
+@export var weight: float = 1000
 @export var hurtbox: Hurtbox
 
 var health: int
+var knockback: Vector2
 
 
 func _ready() -> void:
@@ -23,12 +25,21 @@ func _ready() -> void:
 	add_to_group(Entity.GROUP)
 
 
-func _physics_process(_delta: float) -> void:
-	pass
+func _physics_process(delta: float) -> void:
+	knockback = knockback.move_toward(Vector2.ZERO, weight * delta)
+
+	velocity = getMovement(delta) + knockback
+	move_and_slide()
+
+
+func getMovement(_delta: float) -> Vector2:
+	return Vector2.ZERO
 
 
 func takeAttack(attack: Attack) -> void:
 	takeDamage(attack.getDamage())
+	
+	knockback += Vector2.RIGHT.rotated(attack.rotation) * attack.knockback
 
 
 func takeDamage(damage: int) -> void:

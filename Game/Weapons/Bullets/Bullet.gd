@@ -31,4 +31,6 @@ func _on_area_entered(area: Area2D) -> void:
 
 func load_bullet(texture: Texture2D, size: Vector2) -> void:
 	sprite.texture = texture
-	collision.shape.get_rect().size = size
+	var shape: RectangleShape2D = RectangleShape2D.new()
+	shape.size = size
+	collision.shape = shape

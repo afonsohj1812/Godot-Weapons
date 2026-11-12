@@ -17,6 +17,7 @@ attack = SubResource("Resource_v2hty")
 bullet = ExtResource("2_s5w6u")
 bulletSpeed = 400.0
 bulletRange = 300.0
+followThrough = 2
 fireRate = 10
 spread = 10.0
 texture = ExtResource("3_s5w6u")

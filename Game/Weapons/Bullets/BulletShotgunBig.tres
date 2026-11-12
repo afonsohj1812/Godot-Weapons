@@ -7,4 +7,5 @@
 script = ExtResource("1_ip0ry")
 texture = ExtResource("2_dy6rx")
 size = Vector2(14, 6)
+weight = 0.3
 metadata/_custom_type_script = "uid://ifddwpy6wubh"
