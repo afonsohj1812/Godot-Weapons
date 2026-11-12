@@ -16,7 +16,6 @@ script = ExtResource("1_ds0gr")
 sprite = NodePath("Sprite")
 collision = NodePath("Collision")
 attack = SubResource("Resource_ijymp")
-metadata/_custom_type_script = "uid://ws61fbrst6ha"
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1335468829]
 texture = ExtResource("3_ds0gr")

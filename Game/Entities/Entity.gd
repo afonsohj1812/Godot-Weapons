@@ -18,8 +18,6 @@ var knockback: Vector2
 
 func _ready() -> void:
 	health = maxHealth
-	
-	hurtbox.entity = self
 	hurtbox.hit.connect(takeAttack)
 
 	add_to_group(Entity.GROUP)

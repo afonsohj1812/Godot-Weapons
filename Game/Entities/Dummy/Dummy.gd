@@ -18,8 +18,8 @@ func _on_hit(_damage: int) -> void:
 
 
 func _process(_delta: float) -> void:
-	if (velocity.x):
-		sprite.flip_h = (velocity.x > 0)
+	if (direction.x):
+		sprite.flip_h = (direction.x > 0)
 
 
 func getMovement(delta: float) -> Vector2:
